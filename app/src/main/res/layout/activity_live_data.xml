@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv_messages"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_above="@+id/btn_observe"
+        android:layout_height="match_parent"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="observe"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_observe"
+        android:layout_marginTop="20dp"
+         android:layout_marginStart="20dp"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="remove"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btn_observe"
+        android:id="@+id/btn_remove"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="add"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btn_remove"
+        android:id="@+id/btn_add"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
